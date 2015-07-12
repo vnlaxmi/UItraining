@@ -33,7 +33,7 @@
 		<p id="hai"></p>
 		<script>
 		document.getElementById("hai").innerHTML = "hai guys";
-		</script>
+		</script><hr/>
 
 		<section>
 			<p> this is section one </p>
@@ -49,5 +49,67 @@
 		<option value= "3"> this is section 3 </option>
 		</select>
 
+		<audio controls>
+		<source src="C:\Users\Lakshmi\Downloads\Nelly-Just a Dream .mp3" type="audio/mpeg">
+		this is not for older browser
+		</audio>
+
+		<video controls>
+		<source src="http://www.youtube.com/watch?v=6db6eU1QMyk" type="media/http://www.youtube.com/watch?v=6db6eU1QMyk">
+		</video><br>
+
+		<s> there is a text</s>
+
+		<span class="xyz" style> this is span</span>
+
+		<p> this is a <span style="background-color:#8abb55"> inline element without any background </span> and also any ther colors </p>
+
+		<form action="C:\Users\Lakshmi\Documents\GitHub\UItraining\linkpage.html" >
+		<fieldset>
+			<legend>Personal Details</legend>
+			First Name : <input type="text" id="f.name" name="firstname" placeholder="firstname" maxlength="5">
+
+			Last Name : <input type="text" id="l.name" name="lastname" placeholder="lastname" value="myValue" maxlength="5"> <br/>
+
+			E-Mail: <input type="mail" name="email">
+			password: <input type="password" name"pwd"><br/>
+
+			Numbers Only: <input type="number" name="nmbsonly" min="1" max="10">
+
+			Quantity: <input type="number" name="points" min="0" max="100" step="5" value="30">
+
+			Date: <input type="date" name="today_date">
+
+			Time: <input type="time" name="time">
+
+			</fieldset>
+
+			<input type="checkbox" name="colorchoser" value="Blue" checked> Blue
+
+			<input type="checkbox" name="colorchooser" value="grey"> Grey <br/>
+
+			<input type="radio" name="colorchoser" value="Blue"> Blue
+
+			<input type="radio" name="colorchooser" value="grey" checked> Grey <br/>
+
+			<textarea name="sampletext" rows="2" cols="50"> This is the text area where you can write multiple statements </textarea>
+
+			<input type="submit" valu="submit">
+
+			<button type="button" onclick="console.log('Hello and how are you?')" > click on console
+			</button>
+
+			<button type="button" onclick="alert('Hello and how are you?')" > click on alert
+			</button>
+
+			<input list="names" name="nameslist">
+			<datalist id="names">
+			<option value="John">
+			<option value="Doe">
+			<option value="Mickey Mouse">
+			</datalist>
+
+
+		</form>
 	</body>
-</html>		
+</html>
