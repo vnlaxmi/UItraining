@@ -2,12 +2,14 @@
 <html>
 	<head>
 		<title>Initial page</title>
+		<meta charset="UTF-8">
+		
 	</head>
 	
 	<body>	
 		<h1> This is my initial html page </h1>
 		<h6> This is my initial html page </h6> <hr>
-		<p> At the heart of GitHub is an open source version control system (VCS) called Git. <br> Git is responsible for everything GitHub-related that happens locally on your computer.</p>
+		<p> At the heart of GitHub is an open source &euro; &sum; &copy;  version control system (VCS) called Git. <br> Git is responsible for everything GitHub-related that happens locally on your computer.</p>
 
 		<pre>
 		this is customized pragarph
@@ -64,12 +66,16 @@
 
 		<p> this is a <span style="background-color:#8abb55"> inline element without any background </span> and also any ther colors </p>
 
-		<form action="C:\Users\Lakshmi\Documents\GitHub\UItraining\linkpage.html" >
+		<form action="C:\Users\Lakshmi\Documents\GitHub\UItraining\linkpage.html" autocomplete="on">
 		<fieldset>
 			<legend>Personal Details</legend>
-			First Name : <input type="text" id="f.name" name="firstname" placeholder="firstname" maxlength="5">
+			<div name-"first name">
+			First Name : <input type="text" id="f.name" name="firstname" placeholder="firstname" maxlength="5" autofocus>
+			</div>
 
-			Last Name : <input type="text" id="l.name" name="lastname" placeholder="lastname" value="myValue" maxlength="5"> <br/>
+			<div name-"last name">
+
+			Last Name : <input type="text" id="l.name" name="lastname" placeholder="lastname" value="myValue" maxlength="5"> </div>
 
 			E-Mail: <input type="mail" name="email">
 			password: <input type="password" name"pwd"><br/>
@@ -109,7 +115,32 @@
 			<option value="Mickey Mouse">
 			</datalist>
 
-
 		</form>
+
+		<canvas id="mycanvas" width="500" height="500" style="border:2px solid #000000"> This is my canvas</canvas>
+		<script type="text/javascript">
+		var a = document.getElementById("mycanvas");
+		var ctx = a.getContext("2d");
+		ctx.font= "30px Arial";
+		ctx.fillText("this is canvas", 10, 50);
+		</script>
+
+		<svg width="300" height="200">
+			<polygon points = "100,10 40,198 190,78 10,78 160,198" style="fill:yellow;stroke:purple; stroke-width:5 fill-rule:evenodd;"/>
+			</svg>
+
+			<video width="320" height="240" style="1px solid #070719;" autoplay>
+				<source src="C:\Users\Public\Videos\Sample Videos\Wildlife.wmv" type="video/wmv">
+
+			</video>	
+
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/ClwoekiYh4o" frameborder="0" allowfullscreen></iframe>
+
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.9005841486733!2d-96.9907416!3d32.874349699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e8211eef79efb%3A0xf0c1b30e3a59e98b!2sSt+Jude+Childrens+Hospital!5e0!3m2!1sen!2sus!4v1436915286432" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+			<iframe src="http://www.youtube.com" width="300" height="400"></iframe>
+
+
+
 	</body>
 </html>
