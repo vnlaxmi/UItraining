@@ -7,12 +7,12 @@
 
 	</head>
 	
-	<body>	
+	<body style="background-color: #00fff0;">	
 		<h1 class="headclass"> This is my initial html page </h1>
 		<h6> This is my initial html page </h6> <hr>
-		<p id="paraid"> At the heart of GitHub is an open source &euro; &sum; &copy;  version control system (VCS) called Git. <br> Git is responsible for everything GitHub-related that happens locally on your computer.</p>
+		<p id="paraid" class="paragraph_ident"> At the heart of GitHub is an open source &euro; &sum; &copy;  version control system (VCS) called Git. <br> Git is responsible for everything GitHub-related that happens locally on your computer.</p>
 
-		<pre>
+		<pre class="mypre">
 		this is customized pragarph
 			what ever the way we want to display like.
 		this is the end.</pre>	
@@ -68,7 +68,7 @@
 		<p> this is a <span style="background-color:#8abb55"> inline element without any background </span> and also any ther colors </p>
 
 		<form action="C:\Users\Lakshmi\Documents\GitHub\UItraining\linkpage.html" autocomplete="on">
-		<fieldset>
+		<fieldset id="personalid">
 			<legend>Personal Details</legend>
 			<div name-"first name">
 			First Name : <input type="text" id="f.name" name="firstname" placeholder="firstname" maxlength="5" autofocus>
@@ -170,5 +170,17 @@
 					<!--[if IE 8]
 					    <h1>link the style sheet here or html ie 8 parameters</h>
 					    <![endif]-->
+
+					 <style>
+					 	img{
+					 		position: absolute;
+					 		z-index: -1;
+					 		left: 0px;
+					 		right: 0px;
+					 	}
+					 </style>  
+
+					 <img src="C:\Users\Lakshmi\Desktop\IMG_1965.JPG" width="300" height="300">
+					 	<s>this is the effect of z-index</s> 
 	</body>
 </html>
