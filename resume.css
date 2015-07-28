@@ -1,0 +1,74 @@
+
+
+.left
+{
+	float: left;
+	width: 20%;
+
+}
+
+.right
+{
+	float: right;
+	width: 80%;
+}
+
+
+.tab
+{
+	margin-left: 26em;
+}
+
+.tab1
+{
+	margin-left: 29.5em;
+}
+
+.font
+{
+	font-family: serif;
+
+}
+
+div
+{
+	width: 720px;
+}
+
+
+.tab5
+{
+	margin-left: 25em;
+}
+
+.tab2
+{
+	margin-left: 28em;
+}
+
+.tab3
+{
+	margin-left: 26em;
+}
+
+.tab4
+{
+	margin-left: 39em;
+}
+
+.color
+{
+	color: rgb(255,45,120);
+
+}
+
+.style
+{
+	font-style: italic;
+	font-style: bolder;
+}
+
+p.style
+{
+	font-size: 80%;
+}
