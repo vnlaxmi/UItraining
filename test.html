@@ -1,15 +1,25 @@
-<!doctype html>
+ <!DOCTYPE html>
 <html>
-    <head>
-      <title>My Page</title>
-      <link rel="stylesheet" type="text/css" href="mystyle.css">
-    </head>
-  
-   <body>
-    
-      <h1 style="text-align:center;" class="color">Nagalakshmi</h1> 
-    
-  </body>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="content-script-type" content="text/javascript">
+<script type="text/javascript">
+var re=/(?:\d{3}|\(\d{3}\))([-\/\.])\d{3}\1\d{4}/;
+function testInfo(phoneInput){
+var ok = re.exec(phoneInput.value);
+if(!ok)
+window.alert(phoneInput.value + "isn't a phone number");
+else
+window.alert("thanks, your phone number"+ok[0]);
+}
+</script>
+</head>
+<body>
 
+<p>Enter your phone number (wit area code) and then click "check".<br> the expected format is like ###-###-####.</p>
+<form action="#">
+<input id="phone"></form> <button onclick="testInfor(document.getElementById('phone'));">check</button>
+</form>
+</body>
 </html>
 

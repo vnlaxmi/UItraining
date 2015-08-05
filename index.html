@@ -1,5 +1,7 @@
+<!doctype html>
 <html>
 <head>
+<link href="C:\Users\Lakshmi\Documents\GitHub\UItraining\styles\mystyle.css" type="text/css" rel=stylesheet>
 <title> inital page</title>
 </head>
 <body>
@@ -7,6 +9,48 @@
 <h6>this is my page</h6>
 <p> jgjkgkjlgjlj</p>
 <a href="http://www.google.com"> link page </a>
-<img src "C:\Users\Lakshmi\Desktop\IMG_1965.JPG">
+<!--do not display at this moment <img src="C:\Users\Lakshmi\Desktop\IMG_1965.JPG"><br/>-->
+<script type="text/javascript">
+function time(){
+if (!document.all && !document.getElementById)
+return
+timeElement=document.getElementById? document.getElementById("curTime"): document.all.tick2
+var CurrentDate=new Date()
+var hours=CurrentDate.getHours()
+var minutes=CurrentDate.getMinutes()
+var seconds=CurrentDate.getSeconds()
+var DayNight="PM"
+if (hours<12) DayNight="AM";
+if (hours>12) hours=hours-12;
+if (hours==0) hours=12;
+if (minutes<=9) minutes="0"+minutes;
+if (seconds<=9) seconds="0"+seconds;
+var currentTime=hours+":"+minutes+":"+seconds+" "+DayNight;
+timeElement.innerHTML="<font style='font-family:verdana, arial,tahoma;font-size:12px;color:#E25984; font-weight:bold;'>"+currentTime+"</b>"
+setTimeout("time()",1000)
+} 
+window.onload=time
+</script>
+<span id=curTime></span>
+<div>
+Enter Year: <input type="number" id="leap_year">
+<button onclick="yearcheck()">submit</button>
+</div>
+<script src="C:\Users\Lakshmi\Documents\GitHub\UItraining\scripts\addition.js"></script>
+<div>
+ <h2>Multiplication:</h1>
+ First Input: <input type="number" id="first_input">
+ Second Input: <input type="number" id="second_input">
+ <button onclick="multiply()">result</button>
+ <script src="C:\Users\Lakshmi\Documents\GitHub\UItraining\scripts\addition.js"></script>
+</div>
+
+<div>
+	<h2>Division:</h2>
+	First Input: <input type="number" id="third_input">
+ Second Input: <input type="number" id="fourth_input">
+ <button onclick="divide()">result</button>
+ <script src="C:\Users\Lakshmi\Documents\GitHub\UItraining\scripts\addition.js"></script>
+</div>
 </body>
 </html>
